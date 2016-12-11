@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noEmitHelpers": true
+  },
+  "include": [
+    "app/**/*"
+  ],
+ "awesomeTypescriptLoaderOptions": {
+    "useCache": false,
+    "emitRequireType": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "types":[
+    "node",
+    "core-js"
+  ]
+}

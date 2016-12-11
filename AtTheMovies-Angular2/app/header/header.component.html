@@ -1,0 +1,27 @@
+
+<div class="row header" >
+    <div class="col-md-6 col-md-offset-1">
+        <h1> At The <br> Movies</h1>
+        <h3>online dvd store</h3>
+    </div>
+    <div class="col-md-2">
+        <div class="thumbnail">
+            <a [routerLink]="['/movie', bestReviewedMovie.id ]">
+                <h4>Best Reviews</h4>
+                <h5>{{bestReviewedMovie.Title}}</h5>
+                <img [src]=bestReviewedMovie.image>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="thumbnail">
+            <a [routerLink]="['/movie', bestSellingMovie.id ]">
+                <h4>Best Selling</h4>
+                <h5>{{bestSellingMovie.Title}}</h5>
+                <img [src]=bestSellingMovie.image>
+            </a>
+        </div>
+    </div>
+</div>
+
+

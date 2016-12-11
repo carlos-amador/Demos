@@ -1,0 +1,22 @@
+.reviews{
+    margin: 10px;
+}
+
+.reviews .reviewer{
+    font-size:18px;
+}
+
+.reviews .review{
+    margin: 10px 0 30px 0;
+}
+
+
+
+.reviews .glyphicon.glyphicon-star,
+.reviews .glyphicon.glyphicon-star-empty{
+
+    color:#34495E;
+    background-color: white;
+    font-size: 18px;
+
+}

@@ -1,0 +1,30 @@
+
+.movie-list .thumbnail{
+   /*background-color: #34495E;*/
+   background-color: #16A085;
+   color: white;
+   padding: 10 20px;
+   text-align: center;
+   width: 250px;
+   height: 540px;
+}
+
+.movie-list .thumbnail h4{
+   font-family: "ChunkFive";
+}
+
+.movie-list .thumbnail img{
+    height:300px;
+    width: 200px;
+    padding: 10px;
+}
+
+.movie-list .thumbnail a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.movie-list .thumbnail p{
+    margin: 0 20px;    
+}

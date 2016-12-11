@@ -1,0 +1,17 @@
+<div class="col-md-9 col-md-offset-2 movie-list">
+    <div class="row">
+        <div class="col-md-3" ng-repeat="movie in vm.movies">
+ 
+            <div class="thumbnail">
+                <a ui-sref="movie( { movieId: movie.id } )">
+                    <h4>{{movie.title}}</h4>
+                    <img ng-src={{movie.image}} alt="">
+                    <p>
+                        {{movie.brief}}
+                    </p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>

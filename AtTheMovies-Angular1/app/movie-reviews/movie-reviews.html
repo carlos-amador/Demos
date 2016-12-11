@@ -1,0 +1,45 @@
+<div class="row reviews">
+
+    <h3>Reviews</h3>
+
+    <div class="row col-md-10 col-md-offset-1">
+
+        <div class="review" ng-repeat="review in vm.selectedMovie.reviews">
+            <p>
+                {{ review.summary}}
+            </p>
+            <p class="reviewer">
+                {{ review.reviewer }}
+            </p>
+
+
+            <div>
+                <span 
+                class="glyphicon glyphicon-star" 
+                ng-class="review.stars > 0 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                ng-class="review.stars > 1 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                ng-class="review.stars > 2 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                ng-class="review.stars > 3 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                ng-class="review.stars > 4 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                </span>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>

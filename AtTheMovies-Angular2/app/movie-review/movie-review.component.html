@@ -1,0 +1,34 @@
+
+<div class="row review">
+
+    <h3>Add A Review</h3>
+
+    <div>
+        <input type="text" placeholder="  enter your name" [(ngModel)]="movieReview.reviewer"/>
+    </div>
+    <br>
+    <div>
+        <textarea placeholder=" enter your comments" rows="8" cols="50" [(ngModel)]="movieReview.summary" >
+        </textarea>
+    </div>
+    <br>
+    <div class="add-stars">
+        <label >How Many Stars</label>
+
+        <select [(ngModel)]="starsGiven">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <br>
+
+
+    <div>
+        <button (click)="saveReview()">save</button>
+    </div>
+
+
+</div>

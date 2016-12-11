@@ -1,0 +1,73 @@
+
+    <div class="row movie">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>{{selectedMovie.title}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img [src]=selectedMovie.image >
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                {{selectedMovie.summary}} 
+                            </p>
+
+                        </div>
+                        <div class="col-md-2">
+                            <a [routerLink] ="['reviews', selectedMovie.id ]"v>
+                                <button>read reviews</button>
+                            </a>
+                            <a [routerLink] ="['review', selectedMovie.id ]">
+                                <button>add a review</button>
+                            </a>
+                            <a [routerLink] ="['purchase', selectedMovie.id ]">
+                                <button>buy the dvd</button>
+                            </a>
+                            <a [routerLink] ="['/movies' ]">
+                                <button>back to movies</button>
+                            </a>                        
+                        </div>
+
+                    </div>
+                    
+
+                    
+                    <div>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        [ngClass]="{'glyphicon-star' : selectedMovie.stars > 0  , 'glyphicon-star-empty': !selectedMovie.stars > 0  }">
+
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        [ngClass]="{'glyphicon-star' : selectedMovie.stars > 1  , 'glyphicon-star-empty': !selectedMovie.stars > 1  }">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        [ngClass]="{'glyphicon-star' : selectedMovie.stars > 2  , 'glyphicon-star-empty': !selectedMovie.stars > 2  }">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        [ngClass]="{'glyphicon-star' : selectedMovie.stars > 3  , 'glyphicon-star-empty': !selectedMovie.stars > 3  }">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        [ngClass]="{'glyphicon-star' : selectedMovie.stars > 4  , 'glyphicon-star-empty': !selectedMovie.stars > 4  }">
+                        </span>
+
+                    </div>
+
+                    <div>
+                        <router-outlet ></router-outlet>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>

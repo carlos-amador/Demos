@@ -1,0 +1,44 @@
+<div class="row reviews">
+
+    <h3>Reviews</h3>
+
+    <div class="row col-md-10 col-md-offset-1">
+
+        <div class="review" *ngFor="let review of selectedMovie.reviews">
+            <p>
+                {{ review.summary}}
+            </p>
+            <p class="reviewer">
+                {{ review.reviewer }}
+            </p>
+
+            <div>
+                <span 
+                class="glyphicon glyphicon-star" 
+                [ngClass]="{'glyphicon-star' : review.stars > 0  , 'glyphicon-star-empty': !review.stars > 0  }">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                [ngClass]="{'glyphicon-star' : review.stars > 1  , 'glyphicon-star-empty': !review.stars > 1  }">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                [ngClass]="{'glyphicon-star' : review.stars > 2  , 'glyphicon-star-empty': !review.stars > 2  }">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                [ngClass]="{'glyphicon-star' : review.stars > 3  , 'glyphicon-star-empty': !review.stars > 3  }">
+                </span>
+                <span 
+                class="glyphicon glyphicon-star" 
+                [ngClass]="{'glyphicon-star' : review.stars > 4  , 'glyphicon-star-empty': !review.stars > 4  }">
+                </span>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>

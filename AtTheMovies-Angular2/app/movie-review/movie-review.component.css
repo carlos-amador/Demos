@@ -1,0 +1,32 @@
+
+.review{
+    margin: 20px 10px 20px 10px !important;
+}
+
+
+.review input{
+    width: 50%;
+    
+}
+
+.review textarea{
+    width: 100%;
+    
+}
+
+.review button{
+    padding: 5px;
+    width: 20%;
+    
+}
+
+.review .add-stars{
+    padding: 5px;
+    font-size: 16px;
+    
+}
+
+.review .add-stars select{
+    margin-left: 40px;
+    
+}

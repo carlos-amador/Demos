@@ -1,0 +1,76 @@
+   
+    
+
+    <div class="row movie">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+            <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <h3>{{vm.selectedMovie.title}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img ng-src={{vm.selectedMovie.image}} >
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                {{vm.selectedMovie.summary}} 
+                            </p>
+
+                        </div>
+                        <div class="col-md-2">
+                            <a ui-sref="reviews( { movieId: vm.selectedMovie.id } )">
+
+                                <button>read reviews</button>
+                            </a>
+                            <a ui-sref="review ( { movieId: vm.selectedMovie.id } )">
+                                <button>add a review</button>
+                            </a>
+                            <a ui-sref="purchase ( { movieId: vm.selectedMovie.id } )">
+                                <button>buy the dvd</button>
+                            </a>
+                            <a ui-sref="movies">
+                                <button>back to movies</button>
+                            </a>                        
+                        </div>
+
+                    </div>
+        
+
+                    
+                    <div>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        ng-class="vm.selectedMovie.stars > 0 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        ng-class="vm.selectedMovie.stars > 1 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        ng-class="vm.selectedMovie.stars > 2 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        ng-class="vm.selectedMovie.stars > 3 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                        </span>
+                        <span 
+                        class="glyphicon glyphicon-star" 
+                        ng-class="vm.selectedMovie.stars > 4 ? 'glyphicon-star':'glyphicon-star-empty'  ">
+                        </span>
+
+                    </div>
+
+                    <div>
+                        <ui-view></ui-view>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>

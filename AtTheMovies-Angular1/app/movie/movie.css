@@ -1,0 +1,40 @@
+
+
+.movie .panel{
+    margin: 20px 0 60px 0;
+}
+
+
+.movie .panel-heading{
+    font-family: "ChunkFive";
+    background-color:#34495E;
+    color: white;
+}
+
+.movie .panel-body img{
+    padding: 5px 0 20px 0;
+}
+
+.movie .glyphicon.glyphicon-star,
+.movie .panel-body button{
+    background-color:#34495E;
+    color: white;
+}
+
+.movie .glyphicon.glyphicon-star,
+.movie .glyphicon.glyphicon-star-empty{
+
+    color:#34495E;
+    background-color: white;
+    font-size: 22px;
+
+}
+
+.movie .glyphicon.glyphicon-star.white,
+.movie .glyphicon.glyphicon-star-empty.white{
+
+    color:white;
+    border-color: #34495E;
+    border-width: 2px; 
+    
+}

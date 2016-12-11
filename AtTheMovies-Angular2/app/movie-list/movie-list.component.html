@@ -1,0 +1,22 @@
+
+<div class="col-md-9 col-md-offset-2 movie-list">
+    <div class="row">
+        <!--in movie list-->
+
+        <div class="col-md-3" *ngFor="let movie of movies">
+ 
+            <div class="thumbnail">
+                <!--<a routerLink="['movie/1', { movieId:movie.id }]" >-->
+                <a [routerLink] ="['/movie', movie.id ]" >
+
+                    <h4>{{movie.title}}</h4>
+                    <img [src]="movie.image" alt="">
+                    <p>
+                        {{movie.brief}}
+                    </p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>

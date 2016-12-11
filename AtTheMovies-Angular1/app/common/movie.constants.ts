@@ -1,0 +1,10 @@
+
+// constants
+
+export const GET_MOVIES = "GET_MOVIES";
+export const GET_SELECTED_MOVIE = "GET_SELECTED_MOVIE";
+export const ADD_REVIEW = "ADD_REVIEW";
+export const PURCHASE_MOVIE = "PURCHASE_MOVIE";
+export const CALCULATE_RATINGS = "CALCULATE_RATINGS";
+export const GET_BEST_SELLING = "GET_BEST_SELLING";
+export const GET_BEST_REVIEWED = "GET_BEST_REVIEWED";
