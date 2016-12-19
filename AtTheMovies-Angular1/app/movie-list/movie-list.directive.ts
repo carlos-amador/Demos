@@ -1,5 +1,5 @@
 import {app} from '../app.module';
-require("./movie-list.css");
+
 
 export class MovieList implements ng.IDirective{
     

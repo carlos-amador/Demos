@@ -6,10 +6,7 @@ config.$inject = ["$ngReduxProvider"];
 
 export function config(ngReduxProvider: ngRedux.INgReduxProvider){
 
-    // needed to manually update ngRedux index.d.ts for this method to 
-    // include initialState parameter
     ngReduxProvider.createStoreWith(MoviesReducer);
-
 
 }
 
