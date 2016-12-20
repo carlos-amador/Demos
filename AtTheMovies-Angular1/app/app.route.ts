@@ -28,7 +28,6 @@ export function routes ($stateProvider: ng.ui.IStateProvider,
     $stateProvider.state({
         name: "movie",
         url: '/movie/:movieId',
-        // params: { movieId: null},
         template: '<movie></movie>'
     })
     $stateProvider.state({

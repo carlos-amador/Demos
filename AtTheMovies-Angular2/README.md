@@ -10,3 +10,5 @@ Note - this code was built as a demo app and consequently only configured to run
 
 
 once everything is in place just type "npm start" to fire up the app
+
+localhost:8200

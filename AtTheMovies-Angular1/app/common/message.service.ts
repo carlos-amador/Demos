@@ -4,8 +4,6 @@ import { app } from '../app.module';
 import * as cmn from "../common/index"
 
 
-
-
 export interface IMessageService{
     publish(event: cmn.EventType): void;
     subscribe(): rxjs.Observable<any>;
